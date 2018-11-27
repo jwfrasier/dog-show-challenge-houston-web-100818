@@ -8,21 +8,23 @@ fetch(url)
   .then(function(data) {
     for (let index = 0; index < data.length; index++) {
       let element = data[index];
-      let dogRow = document.createElement("tr");
-      let dogData = document.createElement("td");
-      let dogBreed = document.createElement("td");
-      let dogSex = document.createElement("td");
-      let dogButton = document.createElement("button");
+      let dogeRow = document.createElement("tr");
+      let dogeData = document.createElement("td");
+      let dogeBreed = document.createElement("td");
+      let dogeSex = document.createElement("td");
+      let dogeButton = document.createElement("button");
 
-      dogData.innerHTML = element.name;
-      dogBreed.innerHTML = element.breed;
-      dogSex.innerHTML = element.sex;
-      dogButton.innerHTML = "Edit 🐶";
+      dogeData.innerHTML = element.name;
+      dogeBreed.innerHTML = element.breed;
+      dogeSex.innerHTML = element.sex;
+      dogeButton.innerHTML = "Edit 🐶";
 
-      dogRow.appendChild(dogData);
-      dogRow.appendChild(dogBreed);
-      dogRow.appendChild(dogSex);
-      dogRow.appendChild(dogButton);
-      tableBody.appendChild(dogRow);
+      dogeRow.appendChild(dogeData);
+      dogeRow.appendChild(dogeBreed);
+      dogeRow.appendChild(dogeSex);
+      dogeRow.appendChild(dogeButton);
+      tableBody.appendChild(dogeRow);
     }
   });
+
+const postData = function() {};
